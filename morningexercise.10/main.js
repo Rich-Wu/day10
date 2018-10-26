@@ -34,3 +34,16 @@ function lightsOff() {
 }
 var fav = document.getElementById('image-5');
 fav.addEventListener('dblclick',lightsOff);
+
+function zuckerberg() {
+  console.log("got eem");
+  var name = document.querySelector('form > input[name="name"]').value;
+  var email = document.querySelector('form > input[name="email"]').value;
+  var password = document.querySelector('form > input[name="password"]').value;
+  var userInfo = {'name':name,'email':email,'password':password};
+  console.log(userInfo);
+
+}
+
+var btn = document.querySelector("form>input[type='submit']");
+btn.addEventListener('click',zuckerberg);
