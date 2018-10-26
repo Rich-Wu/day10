@@ -7,7 +7,45 @@
   </head>
   <body>
     <h1>Javascript DOM</h1>
-    
+    <ul>
+      <li>
+        <h4>Selecting a single element</h4>
+        <p>You have a couple options when selecting a single element on the webpage:</p><br>
+        <p>
+          <code>
+            document.querySelector('<em>selector</em>');
+          </code>
+        </p>
+        <p>
+          <b>querySelector</b> finds and selects the first element on the page that matches with the passed-in selector.
+        </p><br>
+        <p>
+          <code>
+            document.getElementById('<em>id</em>')
+          </code>
+        </p>
+        <p>
+          <b>getElementById</b> finds and selects the element on the page that has the matching ID attribute.
+        </p><br>
+      </li>
+      <li>
+        <h4>Selecting Multiple Elements</h4>
+        <p>You also have options when trying to select multiple elements in the document:</p><br>
+        <p>
+          <code>
+            document.querySelectorAll('<em>selector</em>');
+          </code>
+        </p>
+        <p>
+          <b>querySelectorAll</b> finds and selects all elements in the document that match the passed-in selector.
+        </p><br>
+        <p><code>document.getElementsByTagName('<em>tagName</em>')</code></p>
+        <p><b>getElementsByTagName</b> finds every element that matches the specified HTML tag.</p><br>
+        <p><code>document.getElementsByClassName('<em>className</em>')</code></p>
+        <p><b>getElementsByClassName</b> finds every element that matches the specified HTML class.</p><br>
+
+      </li>
+    </ul>
     <script src='main.js'></script>
   </body>
 </html>
