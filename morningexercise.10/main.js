@@ -21,3 +21,4 @@ for (let i=0;i<dm[0]*dm[1];i++){
 
 grid.style.display = 'grid';
 grid.style.gridTemplate = `repeat(${dm[0]},100px)/repeat(${dm[1]},100px)`;
+grid.style.gridGap = '3px';
