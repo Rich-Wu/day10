@@ -6,7 +6,9 @@ console.log('linked');
 // gridContainer[0].style.gridTemplate='150px 150px 150px/150px 150px 150px';
 
 var grid = document.getElementById('gridcontainer');
-var dm = [3,3];
+var rows = prompt('how many rows?');
+var cols = prompt('how many columns?');
+var dm = [rows,cols];
 
 for (let i=0;i<dm[0]*dm[1];i++){
   let div = document.createElement('div');
