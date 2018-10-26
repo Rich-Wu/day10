@@ -12,11 +12,12 @@ for (let i=0;i<dm[0]*dm[1];i++){
   let div = document.createElement('div');
   // console.log(div);
   grid.appendChild(div);
-  let image = document.createElement('img');
-  div.appendChild(image);
-  // console.log(image);
-  image.src = 'profile_thumb.jpg';
+  div.style.backgroundImage = "url('profile_thumb.jpg')";
+  // let image = document.createElement('img');
+  // div.appendChild(image);
+  // // console.log(image);
+  // image.src = 'profile_thumb.jpg';
 }
 
 grid.style.display = 'grid';
-grid.style.gridTemplate = `repeat(${dm[0]},150px)/repeat(${dm[1]},150px)`;
+grid.style.gridTemplate = `repeat(${dm[0]},100px)/repeat(${dm[1]},100px)`;
