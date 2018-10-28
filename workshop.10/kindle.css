@@ -1,0 +1,26 @@
+html {
+  padding: 1px;
+  margin: 1px;
+}
+body {
+  padding: 1px;
+  margin: 1px;
+}
+.kindleBody {
+  border-radius: 3%;
+  padding: 1px;
+  margin: 1px;
+  background-color: #222267;
+}
+article {
+  background-color: white;
+  margin: 20vh 15vh;
+  padding: 5% 2%;
+}
+h1, h2 {
+  text-align:center;
+}
+p {
+  color: white;
+  text-align: justify;
+}
