@@ -28,14 +28,14 @@ function fade() {
   for (paras=0;paras<parasNodes.length;paras++) {
     var paraRect = parasNodes[paras].getBoundingClientRect();
     if (paraRect.top < (0.7*window.innerHeight)) {
-      // console.log(parasNodes[paras].getBoundingClientRect());
+      console.log(paraRect);
       fadeIn('para-'+paras);
-      console.log('done');
     }
-    if (paraRect.bottom < (0.3*window.innerHeight)) {
-      // console.log(parasNodes[paras].getBoundingClientRect());
+    if (paraRect.bottom < (0.3*window.innerHeight) || paraRect.top > 0.8*window.innerHeight) {
+      console.log(paraRect);
       fadeOut('para-'+paras);
     }
+    console.log('looped');
   }
 }
 function fadeIn(paraId) {
@@ -47,3 +47,5 @@ function fadeOut(paraId) {
   document.getElementById(paraId).style.opacity = '0';
   document.getElementById(paraId).style.transition = 'opacity 1s';
 }
+
+addEventListener('scroll',fade);
