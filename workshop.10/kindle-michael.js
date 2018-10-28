@@ -28,18 +28,14 @@ function fade() {
   for (paras=0;paras<parasNodes.length;paras++) {
     var paraRect = parasNodes[paras].getBoundingClientRect();
     if (paraRect.top < (0.7*window.innerHeight)) {
-      console.log(paraRect);
       fadeIn('para-'+paras);
     }
     if (paraRect.bottom < (0.3*window.innerHeight) || paraRect.top > 0.8*window.innerHeight) {
-      console.log(paraRect);
       fadeOut('para-'+paras);
     }
-    console.log('looped');
   }
 }
 function fadeIn(paraId) {
-  console.log(paraId);
   document.getElementById(paraId).style.opacity = '1';
   document.getElementById(paraId).style.transition = 'opacity 1s';
 }
