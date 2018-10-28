@@ -10,10 +10,10 @@ function fadeIn() {
   let vpHeight = window.innerHeight;
   for (i=0;i<parasNodes.length;i++) {
       if (window.scrollY > (vpHeight*0.5*i)+(vpHeight*0.1)){
-        console.log(vpHeight+' '+posY+' '+i);
-        console.log((vpHeight*i)+(vpHeight*0.3));
-        document.getElementById('para-'+i).style.color = 'black';
-        document.getElementById('para-'+i).style.transition = 'color 1s';
+        // console.log(vpHeight+' '+posY+' '+i);
+        // console.log((vpHeight*i)+(vpHeight*0.3));
+        document.getElementById('para-'+i).style.opacity = '1';
+        document.getElementById('para-'+i).style.transition = 'opacity 1s';
       }
       // if (posY > )
   }
